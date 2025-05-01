@@ -21,6 +21,11 @@ example:
  python3 evaluate.py --prediction_folder /people/dicko/medhalt/medhalt/predictions/Mistral-7B-v0.1/Mistral-7B-v0.1  --dataset_folder ./medhalt/datasets --do_json_conversion
 ```
 
+Resultats:
+
+<img width="640" alt="Screenshot 2025-05-01 at 23 23 22" src="https://github.com/user-attachments/assets/84309834-a15c-44bf-80f6-4bf78f29edfe" />
+
+
 
 # Med-HALT: Medical Domain Hallucination Test for Large Language Models
 
