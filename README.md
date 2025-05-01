@@ -1,5 +1,5 @@
 
-# Models use are 
+# Models
 - https://huggingface.co/meta-llama/Llama-2-7b-chat
 - https://huggingface.co/mistralai/Mistral-7B-v0.1
 #### For inference
