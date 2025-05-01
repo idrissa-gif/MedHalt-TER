@@ -1,3 +1,27 @@
+
+# Models use are 
+- https://huggingface.co/meta-llama/Llama-2-7b-chat
+- https://huggingface.co/mistralai/Mistral-7B-v0.1
+#### For inference
+```sh
+./run_inference.sh model_path
+```
+example:
+```sh
+./run_inference.sh /people/dicko/medhalt/medhalt/models/models/Mistral-7B-v0.1
+```
+
+
+#### For evaluation
+```python3
+python3 evaluation.py  --prediction_folder prediction_path  --dataset_folder ground_truth  --do_json_conversion (for merging the ground truth and the generated model output to one json file).
+```
+example:
+```python3
+ python3 evaluate.py --prediction_folder /people/dicko/medhalt/medhalt/predictions/Mistral-7B-v0.1/Mistral-7B-v0.1  --dataset_folder ./medhalt/datasets --do_json_conversion
+```
+
+
 # Med-HALT: Medical Domain Hallucination Test for Large Language Models
 
 This is the code repository used in the [Med-HALT](https://arxiv.org/abs/2307.15343) research paper. This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate hallucinations. 
