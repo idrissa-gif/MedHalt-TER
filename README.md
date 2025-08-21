@@ -112,6 +112,23 @@ prompt:
       response:
             cop: <correct_options>
             cop_index: <correct_index_of_correct_options>
+            why_correct:<explanation_for_correct_answers>
       why_others_incorrect: <explanation_for_incorrect_answers>
 
+```
+### Fake Questions Test (FQT)
+```
+prompt:
+      instruct:<instructions_to_llm>
+      questions: <fake_medical_questions>
+      options:
+            -0:<option_0>
+            -1:<option_1>
+            -2:<option_2>
+            -3:<option_3>
+      response:
+            cop: <correct_options>
+            cop_index: <correct_index_of_correct_options>
+            why_correct:<explanation_for_correct_answers>
+      why_others_incorrect: <explanation_for_incorrect_answers>
 ```
