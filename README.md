@@ -132,3 +132,8 @@ prompt:
             why_correct:<explanation_for_correct_answers>
       why_others_incorrect: <explanation_for_incorrect_answers>
 ```
+
+# RESULTS
+
+![OURS_VS_MEDHALT](comparaison1.png)
+![MISTRAL_VS_Llama](comparaison2.png)
