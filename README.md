@@ -1,6 +1,5 @@
 # Med-HALT: Medical Domain Hallucination Test for Large Language Models
-
-This is the code repository used in the [Med-HALT](https://arxiv.org/abs/2307.15343) research paper. This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate hallucinations. 
+This is the code repository used in the [Med-HALT](https://arxiv.org/abs/2307.15343) research paper. This research paper focuses on the challenges posed by hallucinations in large language models (LLMs), particularly in the context of the medical domain. We propose a new benchmark and dataset, Med-HALT (Medical Domain Hallucination Test), designed specifically to evaluate hallucinations.
 
 Med-HALT provides a diverse multinational dataset derived from medical examinations across various countries and includes multiple innovative testing modalities. Med-HALT includes two categories of tests reasoning and memory-based hallucination tests, designed to assess LLMs' problem-solving and information retrieval abilities. Our study evaluated leading LLMs, including Text Davinci, GPT-3.5, LlaMa and Falcon, revealing significant differences in their performance. The paper provides detailed insights into the dataset, promoting transparency and reproducibility. Through this work, we aim to contribute to the development of safer and more reliable language models in healthcare. Our benchmark can be found at https://github.com/medhalt/medhalt
 
@@ -89,11 +88,30 @@ sh run_eval.sh <path_to_dataset_folder> <path_to_save_predictions>
 ## Citation
 ```
 @misc{umapathi2023medhalt,
-      title={Med-HALT: Medical Domain Hallucination Test for Large Language Models}, 
+      title={Med-HALT: Medical Domain Hallucination Test for Large Language Models},
       author={Logesh Kumar Umapathi and Ankit Pal and Malaikannan Sankarasubbu},
       year={2023},
       eprint={2307.15343},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+```
+
+## Prompts
+#### None of the Above (NOTA)
+
+```
+prompt:
+      instruct: <instruct>
+      questions: <medical_questions>
+      options:
+            -0:<option_0>
+            -1:<option_1>
+            -2:<option_2>
+            -3:<option_3>
+      response:
+            cop: <correct_options>
+            cop_index: <correct_index_of_correct_options>
+      why_others_incorrect: <explanation_for_incorrect_answers>
+
 ```
